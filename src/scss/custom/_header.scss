@@ -16,6 +16,31 @@ header {
                 a {
                     text-decoration: none;
                 }
+
+                .content-language {
+
+                    a {
+                        text-decoration: none;
+                        color: #0f728c;
+
+                        &.active {
+                            font-weight: 800;
+                        }
+                    }
+
+                    span {
+                        margin: -2px 3px 0px 3px;
+                        color: #0f728c;
+                    }
+                }
+
+                .content-social-networks {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }
             }
             
             > .col-md-1 {
@@ -130,6 +155,11 @@ header {
                 justify-content: left;
 
                 .navbar-header {
+                    width: 100%;
+
+                    .navbar-toggle {
+                        margin: 18px 0px 0px 0px;
+                    }
                     
                     .navbar-brand {
                         padding: 0px;
@@ -149,9 +179,13 @@ header {
                     padding: 0px;
 
                     .navbar-nav {
+
+                        &.navbar-right {
+                            margin-right: unset;
+                        }
                         
                         li {
-                            padding: 0px 7px;
+                            padding: 0px 6px;
                             
                             a {
                                 padding: 8px 5px;
@@ -165,6 +199,13 @@ header {
                                     border-bottom: 4px solid #b11e2c;
                                 }
                             }
+
+                            &.divider {
+
+                                hr {
+                                    margin: 4px 0px;
+                                }
+                            }
                         }
                     }
                 }
@@ -175,12 +216,144 @@ header {
 
 @media  (min-width: $screen-md) and (max-width: $screen-lg) {
 
+    header {
+
+        .navbar-default {
+
+            .row {
+                
+                > .col-md-8 {
+
+                    .navbar-collapse {
+
+                        .navbar-nav {
+                            
+                            li {
+                                
+                                a {
+                                    padding: 8px 1px;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $screen-md) {
     
+    header {
+
+        .navbar-top {
+            padding: 0px;
+    
+            .row {
+    
+                > .col-md-2 {
+                    padding: 15px;
+    
+                    .content-language {
+                        width: 50%;
+                    }
+
+                    .content-social-networks {
+                        width: 50%;
+                    }
+                }
+
+                > .col-md-3 {
+
+                    .form-control {
+                        background: #FFF url('../img/icon-lens.png') 98% center no-repeat;
+                    }
+                }
+
+                > .col-md-6 {
+                    padding: 7px 15px;
+                }
+            }
+        }
+
+        .navbar-default {
+
+            .row {
+                
+                > .col-md-4 {
+                    min-height: 60px;
+                }
+
+                > .col-md-8 {
+                    min-height: 60px;
+
+                    .navbar-collapse {
+
+                        .navbar-nav {
+                            
+                            li {
+                                padding: 0px 5px;
+                                
+                                a {
+                                    padding: 8px 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $screen-sm) {
 
+    header {
+
+        .navbar-top {
+    
+            .row {
+    
+                > .col-md-3 {
+                    padding-bottom: 17px;
+
+                    .form-control {
+                        background: #FFF url('../img/icon-lens.png') 96% center no-repeat;
+                    }
+                }
+            }
+        }
+
+        .navbar-default {
+
+            .row {
+                padding: 0px;
+                
+                > .col-md-4 {
+                    min-height: auto;
+                    padding: 15px;
+
+                    .navbar-header {
+
+                        .navbar-toggle {
+                            margin: 4px 0px 0px 0px;
+                        }
+                        
+                        .navbar-brand {
+                            max-width: 180px;
+                        }
+                    }
+                }
+
+                > .col-md-8 {
+                    min-height: auto;
+
+                    .navbar-collapse {
+                        padding: 0px 15px;
+                    }
+                }
+            }
+        }
+    }
 }
