@@ -167,6 +167,10 @@ footer {
 
     footer {
 
+        .footer-form {
+            padding: 30px 0px 30px 0px;
+        }
+
         .footer-center {
 
             .row {
@@ -186,10 +190,6 @@ footer {
 @media (max-width: $screen-sm) {
     
     footer {
-
-        .footer-form {
-            padding: 30px 0px 30px 0px;
-        }
 
         .footer-center {
 

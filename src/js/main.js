@@ -10,6 +10,40 @@ $(document).ready(function() {
 		animateOut: 'fadeOut'
 	});
 
+	var owl_carousel_brands_home = $('.owl-carousel-brands-home').owlCarousel({
+		margin: 15,
+		loop: true,
+		nav: false,
+		dots: false,
+		autoplay: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			768: {
+				items: 3,
+			},
+			992: {
+				items: 3,
+			},
+			1200: {
+				items: 5,
+			}
+		}
+	});
+
+	$('.btn-owl-carousel-brands-home-left').on('click', function (event) {
+		event.preventDefault();
+
+		owl_carousel_brands_home.trigger('prev.owl.carousel');
+	});
+
+	$('.btn-owl-carousel-brands-home-right').on('click', function (event) {
+		event.preventDefault();
+
+		owl_carousel_brands_home.trigger('next.owl.carousel');
+	});
+
 	$("[data-dinaanim]").each(function () {
 
 		var $this = $(this);
