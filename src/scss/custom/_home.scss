@@ -443,6 +443,67 @@
     }
 }
 
+.home-block-general-information {
+
+    .row {
+
+        &:nth-of-type(1) {
+
+            .col-md-12 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+
+                .content-left {
+                    padding-right: 15px;
+                }
+
+                .content-right {
+                    width: 100%;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #b11e2c;
+                    
+                    p {
+                        margin: 0px;
+                        line-height: 25px;
+                        font-size: 21px;
+                        color: #4b4b4b;
+                        
+                        span {
+                            font-size: 21px;
+                            color: #b11e2c;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(2) {
+
+            .col-md-12 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .content-link-general-information {
+                    margin: 25px 8px 40px 8px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+
+                    .img-responsive {
+                        width: 100%;
+                        border: 1px solid #d8d8d8;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media  (min-width: $screen-md) and (max-width: $screen-lg) {
 
     .home-block-video {
@@ -711,6 +772,38 @@
         .container {
             min-height: 250px;
             padding: 40px 15px;
+        }
+    }
+
+    .home-block-general-information {
+        
+        .row {
+
+            &:nth-of-type(1) {
+
+                .col-md-12 {
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .content-left {
+                        margin-bottom: 20px;
+                        padding-right: 0px;
+                    }
+                }
+            }
+            
+            &:nth-of-type(2) {
+                padding: 15px 0px 25px 0px;
+
+                .col-md-12 {
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .content-link-general-information {
+                        margin: 25px 8px 15px 8px;
+                    }
+                }
+            }
         }
     }
 }
