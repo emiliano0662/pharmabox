@@ -1,0 +1,526 @@
+.franchise-block {
+    padding-bottom: 50px;
+
+    .col-md-5 {
+        padding: 30px 60px 0px 15px;
+
+        h2 {
+            margin: 0px 0px 15px 0px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 25px;
+            color: #b11e2c;
+        }
+        
+        p {
+            margin: 0px 0px 20px 0px;
+            font-size: 14px;
+            color: #3d3d3e;
+
+            strong {
+                text-transform: uppercase;
+                font-size: 14px;
+                color: #d1152e;
+            }
+        }
+
+        .content-form-franquicia {
+            padding: 25px 35px;
+            background-color: #ddf1f5;
+
+            .form-group {
+                margin-bottom: 10px;
+
+                .form-control {
+                    color: #b1b1b1;
+                    -webkit-border-radius: 0px;
+                    -moz-border-radius: 0px;
+                    border-radius: 0px;
+                    border: 1px solid #E0E2E1;
+                    background: rgba(255,255,255,1);
+                    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 78%, rgba(237,237,237,1) 100%);
+                    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(78%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,1)));
+                    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 78%, rgba(237,237,237,1) 100%);
+                    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 78%, rgba(237,237,237,1) 100%);
+                    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 78%, rgba(237,237,237,1) 100%);
+                    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 78%, rgba(237,237,237,1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+
+                    &::placeholder {
+                        color: #b1b1b1;
+                    }
+                    &:-ms-input-placeholder {
+                        color: #b1b1b1;
+                    }
+                    &::-ms-input-placeholder {
+                        color: #b1b1b1;
+                    }
+                }
+                
+                .input-group-addon {
+                    font-size: 15px;
+                    color: #c5192d;
+                    border-color: transparent;
+                    background-color: transparent;
+                }
+
+                &:last-child {
+                    margin: 0px;
+                    text-align: center;
+
+                    .btn-default {
+                        margin-top: 8px;
+                        padding: 7px 17px;
+                        border: none;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 13px;
+                        color: #FFF;
+                        background: transparent url('../img/bg-btn-content-form-franquicia.jpg') left top / 1px 100% repeat-x;
+                    }
+                }
+            }
+        }
+
+        .content-form-text-franquicia {
+            padding: 40px 50px;
+            background-color: #00728d;
+
+            p {
+                margin: 0px;
+                line-height: 18px;
+                text-align: justify;
+                font-size: 11px;
+                color: #FFF;
+            }
+        }
+    }
+
+    .col-md-7 {
+        padding: 30px 15px 0px 30px;
+
+        h3 {
+            margin: 0px 0px 15px 0px;
+            padding-bottom: 12px;
+            font-weight: 700;
+            font-size: 30px;
+            color: #3d3d3e;
+            border-bottom: 2px solid #bc0d0d;
+        }
+        
+        p {
+            margin: 0px 0px 25px 0px;
+            line-height: 22px;
+            font-size: 15px;
+            color: #3d3d3e;
+
+            strong {
+                text-transform: uppercase;
+                color: #cd172e;
+            }
+        }
+
+        .btn-default {
+            width: 100%;
+            margin-top: 20px;
+            padding: 4px 0px 8px 0px;
+            border: none;
+            text-align: center;
+            font-size: 24px;
+            color: #FFF;
+            background-color: #b11e2c;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            border-radius: 0px;
+        }
+
+        .carousel {
+            margin-bottom: 15px;
+
+            .carousel-indicators {
+                width: 100%;
+                top: 25px;
+                bottom: unset;
+                left: auto;
+                right: 0px;
+                text-align: right;
+                padding-right: 35px;
+
+                li {
+                    width: 15px;
+                    height: 15px;
+                    margin: 0px 3px;
+                    background-color: #FFF;
+
+                    &.active {
+                        width: 15px;
+                        height: 15px;
+                        margin: 0px 3px;
+                        border-color: #46c0c1;
+                        background-color: #46c0c1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.franchise-block-training {
+
+    h2 {
+        margin: 0px 0px 15px 0px;
+        font-weight: 700;
+        font-size: 30px;
+        color: #3d3d3e;
+        background: transparent url("../img/bg-home-block-latest-news.jpg") left center repeat-x;
+
+        span {
+            padding-right: 15px;
+            font-weight: 700;
+            font-size: 30px;
+            color: #3d3d3e;
+            background-color: #FFF;
+        }
+    }
+    
+    p {
+        margin: 0px 0px 25px 0px;
+        line-height: 22px;
+        font-size: 16px;
+        color: #0b0804;
+
+        strong {
+            text-transform: uppercase;
+            color: #cd172e;
+        }
+    }
+}
+
+.franchise-block-benefit {
+
+    h2 {
+        margin: 0px 0px 20px 0px;
+        font-weight: 700;
+        font-size: 30px;
+        color: #3d3d3e;
+        background: transparent url("../img/bg-home-block-latest-news.jpg") left center repeat-x;
+
+        span {
+            padding-right: 15px;
+            font-weight: 700;
+            font-size: 30px;
+            color: #3d3d3e;
+            background-color: #FFF;
+        }
+    }
+
+    > .container {
+
+        > .row {
+            
+            &:nth-of-type(2) {
+
+                > .col-md-12 {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    .content-info {
+                        padding: 30px 0px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        h3 {
+                            margin: 15px 0px 0px 0px;
+                            text-align: center;
+                            font-weight: 700;
+                            font-size: 14px;
+                            color: #4b4b4b;
+                        }
+                    }
+                }    
+            }
+        }
+    }
+}
+
+.franchise-block-investment {
+    padding: 60px 0px 40px 0px;
+    background-color: #3dbace;
+
+    .col-md-5 {
+
+        .img-responsive {
+            width: 100%;
+        }
+    }
+
+    .col-md-7 {
+
+        &:nth-of-type(2) {
+
+            h2 {
+                margin: 0px 0px 20px 0px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 49px;
+                color: #0f728c;
+            }
+
+            .content-text {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                
+                p {
+                    min-height: 110px;
+                    margin: 0px;
+                    text-transform: uppercase;
+                    line-height: 28px;
+                    font-weight: 700;
+                    font-size: 28px;
+                    color: #0f728c;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+
+                    span {
+                        font-weight: 700;
+                        font-size: 22px;
+                        color: #FFF;
+                    }
+                }
+                
+                &:nth-of-type(1) {
+
+                    p {
+
+                        &:nth-of-type(1) {
+                            padding-left: 120px;
+                            background: transparent url('../img/icon-franchise-block-investment-1.png') left center no-repeat;
+                        }
+
+                        &:nth-of-type(2) {
+                            padding-left: 145px;
+                            background: transparent url('../img/icon-franchise-block-investment-3.png') left center no-repeat;
+                        }
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    margin-top: 25px;
+
+                    p {
+                        padding-left: 125px;
+                        background: transparent url('../img/icon-franchise-block-investment-2.png') left center no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.franchise-block-text-googlemaps {
+    padding: 30px 0px;
+    background-color: #0f728c;
+
+    p {
+        margin: 0px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 22px;
+        color: #FFF;
+    }
+}
+
+@media  (min-width: $screen-md) and (max-width: $screen-lg) {
+
+    .franchise-block-investment {
+
+        .col-md-7 {
+
+            &:nth-of-type(2) {
+
+                h2 {
+                    font-size: 40px;
+                }
+
+                .content-text {
+                    
+                    p {
+                        font-size: 18px;
+
+                        span {
+                            font-size: 21px;
+                        }
+                    }
+                    
+                    &:nth-of-type(1) {
+
+                        p {
+
+                            &:nth-of-type(1) {
+                                padding-left: 110px;
+                                background: transparent url('../img/icon-franchise-block-investment-1.png') left center / 80px auto no-repeat;
+                            }
+
+                            &:nth-of-type(2) {
+                                padding-left: 100px;
+                                background: transparent url('../img/icon-franchise-block-investment-3.png') left center / 80px auto no-repeat;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-top: 0px;
+
+                        p {
+                            padding-left: 110px;
+                            background: transparent url('../img/icon-franchise-block-investment-2.png') left center / 80px auto no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+
+    .franchise-block {
+
+        .col-md-5 {
+            padding: 30px 15px 0px 15px;
+        }
+
+        .col-md-7 {
+            padding: 30px 15px 0px 15px;
+        }
+    }
+
+    .franchise-block-investment {
+
+        .col-md-7 {
+
+            &:nth-of-type(2) {
+
+                h2 {
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-sm) {
+
+    .franchise-block {
+
+        .col-md-5 {
+
+            .content-form-franquicia {
+                padding: 20px 5px 20px 15px;
+
+            }
+
+            .content-form-text-franquicia {
+                padding: 15px;
+            }
+        }
+
+        .col-md-7 {
+
+            .btn-default {
+                padding: 10px 0px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .franchise-block-benefit {
+
+        > .container {
+
+            > .row {
+                
+                &:nth-of-type(2) {
+
+                    > .col-md-12 {
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .content-info {
+                            padding: 15px 0px 30px 0px;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+
+    .franchise-block-investment {
+
+        .col-md-7 {
+
+            &:nth-of-type(2) {
+
+                h2 {
+                    font-size: 40px;
+                }
+
+                .content-text {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    p {
+                        width: 100%;
+                        text-align: center;
+                        font-size: 18px;
+                        align-items: center;
+
+                        span {
+                            font-size: 21px;
+                        }
+                    }
+                    
+                    &:nth-of-type(1) {
+
+                        p {
+
+                            &:nth-of-type(1) {
+                                margin-top: 10px;
+                                padding-top: 115px;
+                                padding-left: 0px;
+                                background: transparent url('../img/icon-franchise-block-investment-1.png') top center no-repeat;
+                            }
+
+                            &:nth-of-type(2) {
+                                margin-top: 25px;
+                                padding-top: 115px;
+                                padding-left: 0px;
+                                background: transparent url('../img/icon-franchise-block-investment-3.png') top center no-repeat;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        
+                        p {
+                            padding-top: 120px;
+                            padding-left: 0px;
+                            background: transparent url('../img/icon-franchise-block-investment-2.png') top center no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

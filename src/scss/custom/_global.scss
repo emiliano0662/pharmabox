@@ -18,6 +18,12 @@ section {
 	position: relative;
 }
 
+#google-map {
+	width: 100%;
+	min-height: 375px;
+	border: none;
+}
+
 @media  (min-width: $screen-md) and (max-width: $screen-lg) {
 
 }
