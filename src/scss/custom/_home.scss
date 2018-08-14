@@ -16,6 +16,10 @@
                     font-weight: 800;
                     font-size: 20px;
                     color: #197891;
+
+                    &.text-white {
+                        color: #FFF;
+                    }
                 }
             }
         }
