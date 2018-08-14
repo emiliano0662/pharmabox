@@ -1,0 +1,99 @@
+.blog-block-list {
+    padding: 20px 0px 40px 0px;
+
+    > .container {
+
+        > .row {
+            
+            &.seccion-blog {
+                padding: 20px 0px;
+                
+                .col-md-8 {
+                    
+                    h1 {
+                        margin: 0px 0px 18px 0px;
+                        text-align: justify;
+                        font-weight: 700;
+                        font-size: 30px;
+                        color: #0f728c;
+                    }
+                    
+                    h2 {
+                        margin: 0px 0px 18px 0px;
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: #b11e2c;
+                    }
+                    
+                    p {
+                        margin: 0px 0px 18px 0px;
+                        text-align: justify;
+                        line-height: 25px;
+                        font-size: 18px;
+                        color: #636363;
+                    }
+                    
+                    h3 {
+                        margin: 0px;
+                        padding: 0px 0px 14px 55px;
+                        font-weight: 700;
+                        font-size: 24px;
+                        color: #b11e2c;
+                        background: transparent url('../img/icon-comments.png') left center no-repeat;
+                    }
+                }
+                
+                .col-md-4 {
+                    
+                    .img-responsive {
+                        width: 100%;
+                    }
+                }
+            }
+
+            hr {
+                border-color: #393b3d;
+            }
+
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
+
+.blog-block-link-next {
+    text-align: right;
+    padding-bottom: 25px;
+
+    a {
+        margin: 0px;
+        padding: 0px 25px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #b11e2c;
+        background: #FFF url('../img/icon-products-bottom-right.png') right center no-repeat;
+    }
+}
+
+@media (max-width: $screen-md) {
+
+    .blog-block-list {
+
+        > .container {
+
+            > .row {
+                
+                &.seccion-blog {
+                    
+                    .col-md-8 {
+                        
+                        h3 {
+                            margin: 0px 0px 18px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
