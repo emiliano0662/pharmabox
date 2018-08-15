@@ -1,0 +1,99 @@
+.contact-block-google-map {
+    min-height: 635px !important;
+}
+
+.contact-block {
+    padding: 40px 0px;
+
+    .row {
+        
+        .col-md-6 {
+
+            &:nth-of-type(1) {
+                min-height: 180px;
+                padding-right: 50px;
+                border-right: 1px solid #3a3b3f;
+
+                h2 {
+                    margin: 0px 0px 20px 0px;
+                    font-weight: 700;
+                    font-size: 28px;
+                    color: #b11e2c;
+                }
+
+                h3 {
+                    margin: 0px 0px 0px 0px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #4b4b4b;
+
+                    span {
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: #0f728c;
+                    }
+                }
+
+                p {
+                    margin: 50px 0px 0px 0px;
+                    text-align: justify;
+                    line-height: 20px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #4b4b4b;
+                }
+            }
+
+            &:nth-of-type(2) {
+                padding-left: 50px;
+
+                h2 {
+                    margin: 0px 0px 20px 0px;
+                    font-weight: 700;
+                    font-size: 28px;
+                    color: #0f728c;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+    
+    .contact-block {
+
+        .row {
+            
+            .col-md-6 {
+
+                &:nth-of-type(1) {
+                    min-height: auto;
+                    padding-right: 15px;
+                    border-right: none;
+
+                    h2 {
+                        text-align: center;
+                    }
+
+                    p {
+                        margin: 20px 0px 0px 0px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    margin-top: 35px;
+                    padding-left: 15px;
+
+                    h2 {
+                        text-align: center;
+                    }
+
+                    .img-responsive {
+                        margin: 0px auto;
+                    }
+                }
+            }
+        }
+    }
+}
