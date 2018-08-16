@@ -44,6 +44,15 @@ $(document).ready(function() {
 		owl_carousel_brands_home.trigger('next.owl.carousel');
 	});
 
+	$(".btn-dropdown-filters").on('click', function (event) {
+		event.preventDefault();
+
+		var input = $(this).data('input');
+		var select = $(this).data('select');
+
+		$(input).val(select);
+	});
+
 	$("[data-dinaanim]").each(function () {
 
 		var $this = $(this);

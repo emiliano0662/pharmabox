@@ -1,5 +1,81 @@
 .locate-us-block-filters {
+    padding-top: 30px;
 
+    form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        .content-filters {
+            margin: 0px 10px;
+
+            p {
+                margin: 0px;
+                font-weight: 700;
+                font-size: 21px;
+                color: #b11e2c;
+            }
+
+            .btn-primary {
+                padding: 8px 20px;
+                font-size: 20px;
+                color: #FFF;
+                border: none;
+                background-color: #0f728c;
+                -webkit-border-radius: 0px;
+                -moz-border-radius: 0px;
+                border-radius: 0px;
+            }
+
+            .input-group {
+
+                .form-control {
+                    padding: 6px 0px;
+                    border: none;
+                    border-bottom: 1px solid #9a9a9a;
+                    -webkit-border-radius: 0px;
+                    -moz-border-radius: 0px;
+                    border-radius: 0px;
+                    box-shadow: none;
+
+                    &:-moz-read-only {
+                        background-color: #FFF;
+                    }
+                    &:read-only {
+                        background-color: #FFF;
+                    }
+                }
+
+                .input-group-btn,
+                .input-group-btn.open  {
+
+                    .btn-default {
+                        border: none;
+                        border-bottom: 1px solid #9a9a9a;
+                        -webkit-border-radius: 0px;
+                        -moz-border-radius: 0px;
+                        border-radius: 0px;
+
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            box-shadow: none;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(1) {
+                min-width: 200px;
+                margin: 0px 10px 0px 0px;
+            }
+            &:nth-of-type(6) {
+                margin: 0px 0px 0px 10px;
+            }
+        }
+    }
 }
 
 .locate-us-block {
@@ -37,16 +113,23 @@
                 overflow-y: auto;
                 
                 li {
-                    padding: 15px 10px;
+                    padding: 15px 40px 15px 10px;
                     border-bottom: 1px solid #9a9a9a;
+                    background: transparent url('../img/icon-locaton-red.png') 97% center no-repeat;
                     
                     a {
-                        text-transform: uppercase;
                         text-decoration: none;
                         line-height: 22px;
                         font-weight: 700;
                         font-size: 17px;
-                        color: #393b3d;
+                        color: #4b4b4b;
+                        
+                        span {
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            font-size: 17px;
+                            color: #0f728c;
+                        }
                         
                         &.active,
                         &:hover {
@@ -74,6 +157,28 @@
 }
 
 @media (max-width: $screen-md) {
+
+    .locate-us-block-filters {
+
+        form {
+            flex-direction: column;
+            justify-content: center;
+
+            .content-filters {
+                width: 100%;
+                margin: 0px 0px 20px 0px;
+
+                &:nth-of-type(1) {
+                    margin: 0px 0px 10px 0px;
+                }
+
+                &:nth-of-type(6) {
+                    margin: 20px 0px;
+                    text-align: center;
+                }
+            }
+        }
+    }
 
     .locate-us-block {
         padding: 20px 0px 50px 0px;
@@ -114,6 +219,7 @@
                     
                     li {
                         padding: 15px 5px;
+                        background: transparent;
                     }
                 }
             }
