@@ -45,6 +45,64 @@ footer {
                 }
             }
         }
+
+        form {
+
+            &:nth-of-type(2) {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                display: none;
+
+                .col-md-8 {
+                    min-height: 40px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    label {
+                        width: 420px;
+                        margin: 0px;
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: #393b3d;
+                    }
+
+                    .form-control {
+                        height: 39px;
+                        margin-top: -1px;
+                        -webkit-border-radius: 0px;
+                        -moz-border-radius: 0px;
+                        border-radius: 0px;
+                    }
+                }
+
+                .col-md-4 {
+
+                    .btn-default {
+                        width: 100%;
+                        line-height: 27px;
+                        font-size: 27px;
+                        color: #FFF;
+                        background-color: #0f728c;
+                        border: none;
+                        -webkit-border-radius: 0px;
+                        -moz-border-radius: 0px;
+                        border-radius: 0px;
+                    }
+                }
+            }
+        }
+
+        &.type-two {
+
+            form {
+
+                &:nth-of-type(2) {
+                    display: block;
+                }
+            }
+        }
     }
 
     .footer-center {
@@ -169,6 +227,26 @@ footer {
 
         .footer-form {
             padding: 30px 0px 30px 0px;
+
+            form {
+
+                &:nth-of-type(2) {
+
+                    .col-md-8 {
+                        flex-direction: column;
+                        justify-content: center;
+
+                        label {
+                            width: 100%;
+                            margin: 30px 0px 15px 0px;
+                        }
+
+                        .form-control {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
         }
 
         .footer-center {
