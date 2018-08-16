@@ -205,7 +205,19 @@
 
     <main>
 
-        <section class="news-block">
+        <section class="locate-us-block-filters">
+            <div class="container">
+        
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="locate-us-block">
             <div class="container">
 
                 <div class="row">
@@ -215,7 +227,7 @@
                         <div class="content-list-menu">
 
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="KEYWORD">
+                                <input type="text" class="form-control" placeholder="ENTER LOCATION">
                             </div>
 
                             <ul>
@@ -225,105 +237,16 @@
                                 <li>
                                     <a href="" class="active">PROMOTIONAL CODE, THE MONTH OF father</a>
                                 </li>
-                                <li>
-                                    <a href="">PROMOTIONAL CODE, THE MONTH OF father</a>
-                                </li>
-                                <li>
-                                    <a href="">PROMOTIONAL CODE, THE MONTH OF father</a>
-                                </li>
-                                <li>
-                                    <a href="">PROMOTIONAL CODE, THE MONTH OF father</a>
-                                </li>
-                                <li>
-                                    <a href="">PROMOTIONAL CODE, THE MONTH OF father</a>
-                                </li>
-                                <li>
-                                    <a href="">PROMOTIONAL CODE, THE MONTH OF father</a>
-                                </li>
-                                <li>
-                                    <a href="">PROMOTIONAL CODE, THE MONTH OF father</a>
-                                </li>
-                                <li>
-                                    <a href="">PROMOTIONAL CODE, THE MONTH OF father</a>
-                                </li>
-                                <li>
-                                    <a href="">PROMOTIONAL CODE, THE MONTH OF father</a>
-                                </li>
-                                <li>
-                                    <a href="">PROMOTIONAL CODE, THE MONTH OF father</a>
-                                </li>
-                                <li>
-                                    <a href="">PROMOTIONAL CODE, THE MONTH OF father</a>
-                                </li>
-                                <li>
-                                    <a href="">PROMOTIONAL CODE, THE MONTH OF father</a>
-                                </li>
-                                <li>
-                                    <a href="">PROMOTIONAL CODE, THE MONTH OF father</a>
-                                </li>
                             </ul>
 
                         </div>
-                        
 
                     </div>
 
                     <div class="col-md-8">
 
-                        <h1>INNOVATIVE AND UNIQUE AUTOMATED PHARMACY GOING INTO CORAL SQUARE</h1>
+                        <div id="google-map-locate-us" class="content_google_map"></div>
 
-                        <img src="./assets/img/news/img-1.jpg" class="img-responsive">
-
-                        <hr>
-
-                        <div class="content-link-social">
-
-                            <p>Share on:</p>
-
-                            <a href="">
-                                <img src="./assets/img/icon-linkedin-red.png">
-                            </a>
-
-                            <a href="">
-                                <img src="./assets/img/icon-twitter-red.png">
-                            </a>
-
-                            <a href="">
-                                <img src="./assets/img/icon-facebook-red.png">
-                            </a>
-
-                        </div>
-
-                        <h2>Pharmabox will give shoppers the brands they know and trust, in a convenient, automated retailing system</h2>
-
-                        <p>MIAMI, Dec. 10, 2015 /PRNewswire/ -- Pharmabox, Inc., (www.pharmabox.com), the developer of the world's first automated pharmacy
-                            with the world's top brands, announced today that their automated kiosk, commonly known as "The Pharmacy at Your Fingertips,"
-                            will be placed at Coral Square, in Miami.</p>
-                        
-                        <p>Coral Square Mall is a wonderful climate controlled indoor mall that was recently renovated. Among the 120 great stores,
-                            it features Macy's, jcpenney, Kohls, Sears, Old Navy, The Limited and Shoe Carnival. This shopping destination is conveniently
-                            located at the intersection of W. Atlantic Boulevard and University Drive in Coral Springs, Florida. Coral Square Mall
-                            serves the nearby communities of Parkland, Coconut Creek, Margate, Tamarac and North Lauderdale, among others.</p>
-                        
-                        <p>Pharmabox is an Automated Pharmacy that carries over 140 of the top selling brands and products typically found in a Target,
-                            Rite-Aid, CVS, or Walgreen's store, including cold and allergy medicines, stomach and digestive medicines, men's and
-                            women's personal health items, contraceptives, pediatric medicines, suntan lotions, vitamins, batteries, hair care, soaps,
-                            facial products, cleansers, moisturizers, and much more.</p>
-                        
-                        <p>"We are pleased to be in such a prominent and prestigious location as Coral Square," said Alejandro Rodriguez, Founder and
-                            CEO Pharmabox. "Now shoppers can pick up their personal items and OTC medicines while they are at this wonderful destination,
-                            and avoid having to make a separate trip to another store."</p>
-                        
-                        <p>Simon is a global leader in retail real estate ownership, management and development, and an S&P100 company. The company
-                            owns or has an interest in 230 retail real estate properties, comprising 190 million square feet in North America, Europe
-                            and Asia.</p>
-                        
-                        <p>Rodriguez acknowledges the strength of a partnership with Simon. "As a business owner, I could not ask for a better location
-                            partner than Simon," he said. "We look forward to providing Simon shoppers with a unique and valuable service, along
-                            with a fun and interactive shopping experience, through our innovative and unique automated pharmacy kiosks."</p>
-                        
-                        <p>For more information on Pharmabox, call: 800-560-0914, or visit: www.pharmabox.com</p>
-                    
                     </div>
 
                 </div>
@@ -450,6 +373,46 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="./assets/js/bundle.min.js"></script>
+
+    <script type="text/javascript">
+        var map;
+        var marker = [];
+        var infowindow = null;
+
+        function initMap() {
+
+            map = new google.maps.Map(document.getElementById('google-map-locate-us'), {
+                center: { lat: 25.794202, lng: -80.331753 },
+                zoom: 15,
+                minZoom: 2,
+            });
+
+            marker = new google.maps.Marker({
+                position: { lat: 25.794202, lng: -80.331753 },
+                map: map,
+                zIndex: 0
+            });
+
+            var contentString = "<div class=\"info-window\"> <h5>Pharmabox</h5> <div class=\"info-content\">Address: 1962 NW 82nd Ave, Doral, FL-33126.<br><br><a href=\"https://www.google.com/maps/dir/?api=1&origin=&destination=1962+NW+82nd+Ave%2C+Doral%2C+FL-33126\" target=\"_blank\" class=\"btn btn-primary btn-sm\"><span class=\"glyphicon glyphicon-road\" aria-hidden=\"true\"></span> <b>HOW TO GET</b></a></div> </div>";
+
+            if (infowindow != null) infowindow.close();
+
+            infowindow = new google.maps.InfoWindow({
+                content: contentString,
+                maxWidth: 250
+            });
+
+            marker.addListener('click', function () {
+
+                infowindow.open(map, marker);
+
+            });
+
+            infowindow.open(map, marker);
+
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDN7IXZwnFMmIveN_T9-6c-w_YYex_Gks&callback=initMap" async defer></script>
 
 </body>
 

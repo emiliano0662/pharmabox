@@ -1,7 +1,12 @@
-.news-block {
-    padding: 40px 0px;
+.locate-us-block-filters {
+
+}
+
+.locate-us-block {
+    padding: 40px 0px 50px 0px;
 
     .col-md-4 {
+        padding-right: 0px;
 
         .content-list-menu {
             padding: 5px;
@@ -25,7 +30,7 @@
             }
             
             ul {
-                max-height: 700px;
+                height: 661px;
                 margin: 0px;
                 padding: 0px 10px;
                 list-style: none;
@@ -58,71 +63,39 @@
     }
     
     .col-md-8 {
+        padding-left: 0px;
 
-        h1 {
-            margin: 0px 0px 20px 0px;
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 27px;
-            color: #0f728c;
-        }
-
-        .img-responsive {
-            margin: 0px auto;
-        }
-
-        hr {
-            border-color: #3a3b3f;
-        }
-
-        .content-link-social {
-            padding-bottom: 30px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-
-            p {
-                margin: 0px 8px;
-                font-weight: 700;
-                font-size: 17px;
-                color: #0f728c;
-            }
-
-            a {
-                margin: 0px 8px;
-            }
-        }
-
-        h2 {
-            margin: 0px 0px 20px 0px;
-            font-weight: 700;
-            font-size: 27px;
-            color: #393b3d;
-        }
-
-        p {
-            margin: 0px 0px 20px 0px;
-            font-size: 18px;
-            color: #393b3d;
+        .content_google_map {
+            width: 100%;
+            height: 750px;
+            border: none;
         }
     }
 }
 
 @media (max-width: $screen-md) {
 
-    .news-block {
+    .locate-us-block {
         padding: 20px 0px 50px 0px;
 
         .col-md-4 {
             margin-bottom: 30px;
+            padding-right: 15px;
 
             .content-list-menu {
                 
                 ul {
+                    height: auto;
                     max-height: 300px;
                 }
+            }
+        }
+
+        .col-md-8 {
+            padding-left: 15px;
+
+            .content_google_map {
+                height: 350px;
             }
         }
     }
@@ -130,7 +103,7 @@
 
 @media (max-width: $screen-sm) {
 
-    .news-block {
+    .locate-us-block {
 
         .col-md-4 {
 

@@ -60,6 +60,10 @@
 }
 
 @media (max-width: $screen-md) {
+
+    .contact-block-google-map {
+        min-height: 300px !important;
+    }
     
     .contact-block {
 
