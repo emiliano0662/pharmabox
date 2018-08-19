@@ -40,6 +40,28 @@ header {
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
+
+                    a {
+
+                        .img-responsive {
+                            width: 19px;
+
+                            &.type-hover {
+                                display: none;
+                            }
+                        }
+
+                        &:hover {
+
+                            .img-responsive {
+                                display: none;
+
+                                &.type-hover {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             

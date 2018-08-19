@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	$('#da-slider').cslider();
+
 	var owl_carousel_main = $('.owl-carousel-main').owlCarousel({
 		items: 1,
 		margin: 0,
