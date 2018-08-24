@@ -186,6 +186,10 @@ header {
                     .navbar-brand {
                         padding: 0px;
                         height: auto;
+
+                        .img-responsive {
+                            max-width: 305px;
+                        }
                     }
                 }
             }
@@ -210,8 +214,9 @@ header {
                             padding: 0px 6px;
                             
                             a {
-                                padding: 8px 5px;
+                                padding: 8px 3px;
                                 font-weight: 800;
+                                font-size: 14px;
                                 color: #4b4b4b;
                                 border-bottom: 4px solid #FFF;
 
@@ -251,9 +256,10 @@ header {
                         .navbar-nav {
                             
                             li {
+                                padding: 0px 3px;
                                 
                                 a {
-                                    padding: 8px 1px;
+                                    padding: 8px 0px;
                                     font-size: 13px;
                                 }
                             }
@@ -318,7 +324,7 @@ header {
                                 padding: 0px 5px;
                                 
                                 a {
-                                    padding: 8px 4px;
+                                    padding: 8px 2px;
                                 }
                             }
                         }

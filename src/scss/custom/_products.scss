@@ -51,6 +51,10 @@
             margin-bottom: 45px;
 
             .img-products {
+                max-height: 204px;
+                margin: 0px 0px 15px 0px;
+                border: 1px solid #b4b1b1;
+                overflow: hidden;
 
                 .img-heart {
                     margin: 15px 15px -40px 0px;
@@ -60,8 +64,7 @@
 
                 .img-responsive {
                     width: 100%;
-                    margin: 0px 0px 15px 0px;
-                    border: 1px solid #b4b1b1;
+                    margin: 0px;
                 }
             }
             
