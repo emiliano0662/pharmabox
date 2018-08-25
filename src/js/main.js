@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-	$('#da-slider').cslider();
+	$('#da-slider').cslider({
+		interval: 8000
+	});
 
 	var owl_carousel_main = $('.owl-carousel-main').owlCarousel({
 		items: 1,
