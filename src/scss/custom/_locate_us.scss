@@ -116,6 +116,7 @@
                     padding: 15px 40px 15px 10px;
                     border-bottom: 1px solid #9a9a9a;
                     background: transparent url('../img/icon-locaton-red.png') 97% center no-repeat;
+                    cursor: pointer;
                     
                     a {
                         text-decoration: none;
@@ -129,14 +130,17 @@
                             font-weight: 700;
                             font-size: 17px;
                             color: #0f728c;
-                        }
-                        
-                        &.active,
-                        &:hover {
+                        }    
+                    }
+                    
+                    &.active,
+                    &:hover {
+
+                        a {
                             color: #0f728c;
                         }
                     }
-                    
+
                     &:last-child {
                         border-bottom: none;
                     }
