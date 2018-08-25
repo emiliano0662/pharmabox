@@ -58,6 +58,12 @@
     }
 
     .da-slide {
+    	background-color: transparent;
+    	background-size: cover;
+    	background-position: center center;
+    	background-repeat: no-repeat;
+    	transition: 1s all;
+		opacity: 0;
 
         h2 {
             margin: 40px 0px 0px 0px;
@@ -71,6 +77,10 @@
             &.text-white {
                 color: #FFF;
             }
+        }
+
+        &.da-slide-current {
+        	opacity: 1;
         }
     }
 }
