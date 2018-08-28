@@ -54,6 +54,89 @@
                     font-size: 28px;
                     color: #0f728c;
                 }
+
+                .containter-counter-circle {
+                    width: 100%;
+                    height: 140px;
+                    background: transparent url('../img/bg-counter-circle.png') left center / 100% 24px no-repeat;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: stretch;
+                    justify-content: flex-start;
+
+                    .items-counter-circle {
+                        margin-left: 60px;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        label {
+                            margin: 0px;
+                            font-weight: 700;
+                            font-size: 16px;
+                            color: #46c0c1;
+                        }
+
+                        p {
+                            margin: 0px;
+                            padding: 8px 15px;
+                            font-weight: 700;
+                            font-size: 16px;
+                            color: #FFF;
+                            -webkit-border-radius: 20px;
+                            -moz-border-radius: 20px;
+                            border-radius: 20px;
+                        }
+
+                        &:nth-of-type(1) {
+                            background: transparent url('../img/icon-counter-circle-redwine.jpg') center center no-repeat;
+
+                            p {
+                                background-color: #af2234;
+                            }
+                        }
+
+                        &:nth-of-type(2) {
+                            background: transparent url('../img/icon-counter-circle-red.jpg') center center no-repeat;
+
+                            p {
+                                background-color: #e61737;
+                            }
+                        }
+
+                        &:nth-of-type(3) {
+                            background: transparent url('../img/icon-counter-circle-gray.jpg') center center no-repeat;
+
+                            p {
+                                background-color: #545454;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  (min-width: $screen-md) and (max-width: $screen-lg) {
+
+    .contact-block {
+
+        .row {
+            
+            .col-md-6 {
+
+                &:nth-of-type(2) {
+
+                    .containter-counter-circle {
+
+                        .items-counter-circle {
+                            margin-left: 40px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -95,6 +178,54 @@
 
                     .img-responsive {
                         margin: 0px auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-sm) {
+
+    .contact-block {
+
+        .row {
+            
+            .col-md-6 {
+
+                &:nth-of-type(2) {
+
+                    .containter-counter-circle {
+                        height: auto;
+                        background: transparent;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        .items-counter-circle {
+                            margin-left: 0px;
+
+                            label {
+                                margin-bottom: 12px;
+                            }
+
+                            p {
+                                margin-bottom: 20px;
+                            }
+
+                            &:nth-of-type(1) {
+                                background: transparent;
+                            }
+
+                            &:nth-of-type(2) {
+                                flex-direction: column-reverse;
+                                background: transparent;
+                            }
+
+                            &:nth-of-type(3) {
+                                background: transparent;
+                            }
+                        }
                     }
                 }
             }
