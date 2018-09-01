@@ -54,3 +54,18 @@ section {
 @media (max-width: $screen-sm) {
 
 }
+
+
+@media (min-width: $screen-sm) {
+	
+	body {
+		padding-top: 308px;
+	}
+}
+
+@media (min-width: $screen-md) {
+
+	body {
+		padding-top: 188px;
+	}
+}

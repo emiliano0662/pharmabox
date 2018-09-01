@@ -1046,6 +1046,17 @@
 }
 @media screen and (max-width: 425px) {
 
+    .home-block-banner {
+        
+        .da-slide {
+
+            h2 {
+                margin: 15px 0px 0px 0px !important;
+                font-size: 18px !important;
+            }
+        }
+    } 
+
 	.da-dots {
 	    bottom: 11px;
 	}
@@ -1057,12 +1068,12 @@
 }
 @media screen and (max-width: 375px) {
 
-    .da-slide .img-1 {
+    /*.da-slide .img-1 {
         display: none;
     }
     .da-slide .img-2 {
         display: none;
-	}
+	}*/
 	.da-dots {
 	    bottom: 10px;
 	}
