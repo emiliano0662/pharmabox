@@ -362,18 +362,18 @@
 }
 
 .home-block-latest-news {
-    padding-bottom: 55px;
+    padding-bottom: 25px;
 
     > .container {
-            
+
         > .row {
-            
+
             &:nth-of-type(1) {
 
                 h3 {
-                    margin: 10px 0px 20px 0px;
+                    margin: 20px 0px 20px 0px;
                     background: transparent url('../img/bg-home-block-latest-news.jpg') left center repeat-x;
-
+                    
                     a {
                         margin: 0px 25px 0px 0px;
                         padding-right: 15px;
@@ -386,109 +386,81 @@
                 }
             }
 
-            &:nth-of-type(2) {
+            .container-seccion-news {
+                width: 100%;
+                min-height: 320px;
+                margin-bottom: 30px;
+                background-color: transparent;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
 
-                > .col-md-6 {
+                .content-info {
+                    width: 100%;
+                    padding: 25px 35px;
+                    background-color: transparent;
+                    background-image: url('../img/icon-arrow-text-home-latest-news.png'), url('../img/bg-text-home-latest-news.png');
+                    background-repeat: no-repeat, repeat-x;
+                    background-size: auto auto, 1px 100%;
+                    background-position: 96% center, left top;
+
+                    h3 {
+                        margin: 0px 0px 12px 0px;
+                        font-weight: 700;
+                        font-size: 20px;
+                        color: #FFF;
+                    }
                     
-                    .container-seccion-news {
-                        width: 100%;
-                        min-height: 288px;
-                        background-color: transparent;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: center center;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-end;
+                    p {
+                        margin: 0px;
+                        line-height: 25px;
+                        font-weight: 700;
+                        font-size: 20px;
+                        color: #FFF;
+                    }
+                    
+                    a {
+                        margin: 0px;
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #FFF;
+                        display: none;
+                    }
+                }
+
+                &:hover {
+
+                    .content-info {
+
+                        p {
+                            margin: 0px 0px 12px 0px;
+                        }
+                        
+                        a {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(3) {
+
+                .container-seccion-news {
+
+                    &:hover {
 
                         .content-info {
-                            width: 100%;
-                            padding: 15px 35px;
-                            background-color: transparent;
-                            background-image: url('../img/icon-arrow-text-home-latest-news.png'), url('../img/bg-text-home-latest-news.png');
+                            background-image: url('../img/icon-arrow-down-text-home-latest-news.png'), url('../img/bg-text-home-latest-news.png');
                             background-repeat: no-repeat, repeat-x;
                             background-size: auto auto, 1px 100%;
-                            background-position: 96% center, left top;
+                            background-position: 95% 20px, left top;
                             
                             p {
-                                margin: 0px;
-                                line-height: 25px;
-                                font-weight: 700;
-                                font-size: 20px;
-                                color: #FFF;
-                            }
-                            
-                            a {
-                                margin: 0px;
-                                text-decoration: none;
-                                font-weight: 400;
-                                font-size: 16px;
-                                color: #FFF;
-                                display: none;
-                            }
-                        }
-
-                        &:hover {
-
-                            .content-info {
-
-                                p {
-                                    margin: 0px 0px 12px 0px;
-                                }
-                                
-                                a {
-                                    display: block;
-                                }
-                            }
-                        }
-                    }
-
-                    &:nth-of-type(1) {
-                        padding-right: 30px;
-                        border-right: 1px solid #0e0404;
-                    }
-
-                    &:nth-of-type(2) {
-                        padding-left: 30px;
-                    }
-
-                    > .row {
-
-                        > .col-md-6 {
-                            
-                            > .container-seccion-news {
-                        
-                                > .content-info {
-                                    padding: 20px;
-                                    background: transparent url('../img/bg-text-home-latest-news.png') left top / 1px 100% repeat-x;
-
-                                    h3 {
-                                        margin: 0px 0px 12px 0px;
-                                        font-weight: 700;
-                                        font-size: 20px;
-                                        color: #FFF;
-                                    }
-
-                                    p {
-                                        margin: 0px;
-                                        font-weight: 400;
-                                    }
-                                }
-
-                                &:hover {
-
-                                    .content-info {
-                                        padding: 30px 20px 20px  20px;
-                                        background-image: url('../img/icon-arrow-down-text-home-latest-news.png'), url('../img/bg-text-home-latest-news.png');
-                                        background-repeat: no-repeat, repeat-x;
-                                        background-size: auto auto, 1px 100%;
-                                        background-position: 95% 15px, left top;
-                                        
-                                        p {
-                                            margin: 0px 0px 12px 0px;
-                                        }
-                                    }
-                                }
+                                margin: 0px 0px 12px 0px;
                             }
                         }
                     }
