@@ -820,6 +820,62 @@
 
 </footer>
 
+<!-- Modal -->
+<div class="modal fade" id="modal-pop-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header">
+
+				<img src="./assets/img/bg-top-pop-up.png" class="img-responsive">
+
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="./assets/img/icon-close-pop-up.png" class="img-responsive"></button>
+
+			</div>
+
+			<div class="modal-body">
+				
+				<form id="form-modal-pop-up" action="" method="POST">
+
+					<div class="form-group">
+						<h2>join the fun!</h2>
+						<p>SING UP For a coupon of 20% discount.</p>
+						<span>*REQUIRED</span>
+					</div>
+
+					<div class="form-group">
+						<label for="input_first_name">*First name:</label>
+						<input type="text" class="form-control" id="input_first_name" name="input_first_name">
+					</div>
+
+					<div class="form-group">
+						<label for="input_last_name">*Last name:</label>
+						<input type="text" class="form-control" id="input_last_name" name="input_last_name">
+					</div>
+
+					<div class="form-group">
+						<label for="input_email">*Email:</label>
+						<input type="email" class="form-control" id="input_email" name="input_email">
+					</div>
+
+					<div class="form-group">
+						<button type="submit" class="btn btn-default" form="form-modal-pop-up">SIGN UP + SAVE</button>
+					</div>
+		
+					<div class="form-group">
+						<small>offer valid ONLY in vending machines</small>
+					</div>
+				
+				</form>
+				
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -829,6 +885,14 @@
 <script type="text/javascript" src="./assets/js/jquery.cslider.js"></script>
 
 <script type="text/javascript" src="./assets/js/bundle.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+	$('#modal-pop-up').modal('show');
+
+});
+</script>
 
 </body>
 </html>
