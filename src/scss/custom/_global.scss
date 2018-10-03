@@ -66,6 +66,100 @@ section {
 				position: absolute;
 			}
 		}
+
+		.modal-body {
+			padding: 0px 22px 22px 22px;
+			background-color: #FFF;
+			-webkit-border-bottom-right-radius: 25px;
+			-webkit-border-bottom-left-radius: 25px;
+			-moz-border-radius-bottomright: 25px;
+			-moz-border-radius-bottomleft: 25px;
+			border-bottom-right-radius: 25px;
+			border-bottom-left-radius: 25px;
+
+			> .img-responsive {
+				margin: 0px auto 15px auto;
+			}
+
+			form {
+				padding: 15px 25px 0px 25px;
+				border: 3px dashed #000;
+
+				.form-group {
+
+					&:nth-of-type(1) {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+
+						h2 {
+							margin: 0px;
+							text-align: center;
+							text-transform: uppercase;
+							font-weight: 700;
+							font-size: 50px;
+							color: #38b3c2;
+						}
+
+						p {
+							margin: 0px 0px 10px 0px;
+							text-align: center;
+							font-weight: 700;
+							font-size: 22px;
+							color: #2b2d2f;
+						}
+
+						span {
+							margin: 0px;
+							font-weight: 700;
+							font-size: 18px;
+							color: #2b2d2f;
+							align-self: flex-end;
+						}
+					}
+
+					label {
+						font-weight: 700;
+						font-size: 18px;
+						color: #2b2d2f;
+					}
+
+					&.text-center {
+						margin-bottom: 10px;
+
+						.btn-default {
+							width: 100%;
+							margin-top: 10px;
+							border-color: #145f7c;
+							text-transform: uppercase;
+							text-align: center;
+							line-height: 27px;
+							font-size: 27px;
+							color: #FFF;
+							background-color: #145f7c;
+							-webkit-border-radius: 0px;
+							-moz-border-radius: 0px;
+							border-radius: 0px;
+						}
+	
+						small {
+							font-weight: 700;
+							font-size: 18px;
+							color: #2b2d2f;
+						}
+					}
+
+					.form-control {
+						height: auto;
+						padding: 10px 12px;
+						-webkit-border-radius: 0px;
+						-moz-border-radius: 0px;
+						border-radius: 0px;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -78,6 +172,60 @@ section {
 }
 
 @media (max-width: $screen-sm) {
+
+	#modal-pop-up {
+
+		.modal-content {
+
+			.modal-header {
+
+				.close {
+					top: 0px;
+					right: 0px;
+				}
+			}
+
+			.modal-body {
+
+				form {
+
+					.form-group {
+
+						&:nth-of-type(1) {
+
+							h2 {
+								font-size: 35px;
+							}
+
+							p {
+								font-size: 15px;
+							}
+
+							span {
+								font-size: 12px;
+							}
+						}
+
+						label {
+							font-size: 15px;
+						}
+
+						&.text-center {
+
+							.btn-default {
+								line-height: 20px;
+								font-size: 20px;
+							}
+		
+							small {
+								font-size: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 
 }
 
