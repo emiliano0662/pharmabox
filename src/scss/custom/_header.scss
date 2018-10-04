@@ -114,7 +114,7 @@ header {
                 flex-direction: row;
                 align-items: center;
                 
-                ul {
+                > ul {
                     width: 100%;
                     min-height: 44px;
                     list-style: none;
@@ -125,9 +125,9 @@ header {
                     align-items: center;
                     justify-content: space-between;
 
-                    li {
+                    > li {
 
-                        a {
+                        > a {
                             display: flex;
                             flex-direction: row;
                             align-items: center;
@@ -135,22 +135,82 @@ header {
                             text-decoration: none;
                             color: #0f728c;
                         }
-                        
-                        &:nth-of-type(3) {
 
-                            a {
-    
-                                img {
+                        > .dropdown {
+                            
+                            > a {
+                                border: none;
+                                background-color: transparent;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: space-between;
+                                text-decoration: none;
+                                color: #0f728c;
+                                
+                                > img {
                                     margin-right: 10px;
                                 }
                             }
+
+                            > .dropdown-menu {
+                                top: 45px;
+                                right: 0px;
+                                left: auto;
+                                border: none;
+                                padding: 8px 10px 0px 10px;
+                                -webkit-border-radius: 12px;
+                                -moz-border-radius: 12px;
+                                border-radius: 12px;
+
+                                .img-arrow-dropdown-menu {
+                                    top: -17px;
+                                    right: 25px;
+                                    position: absolute;
+                                }
+
+                                li {
+                                    
+                                    a {
+                                        padding: 5px 8px;
+                                        text-transform: uppercase;
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        color: #46c0c1;
+                                        
+                                        &:hover {
+                                            background-color: #FFF;
+                                        }
+                                    }
+
+                                    &:last-child {
+                                        margin-top: 30px;
+                                        border-top: 1px solid #000;
+
+                                        a {
+                                            padding: 8px 10px;
+                                            color: #b11e2c;
+                                        }
+                                    }
+                                }
+                            }
                         }
+                        
+                        /*&:nth-of-type(3) {
+
+                            > a {
+    
+                                > img {
+                                    margin-right: 10px;
+                                }
+                            }
+                        }*/
 
                         &:nth-of-type(5) {
 
-                            a {
+                            > a {
     
-                                img {
+                                > img {
                                     margin: 0px 12px 0px 8px;
                                 }
                             }
@@ -302,6 +362,19 @@ header {
 
                 > .col-md-6 {
                     padding: 7px 15px;
+
+                    > ul {
+
+                        > li {
+
+                            > .dropdown {
+                                    
+                                > .dropdown-menu {
+                                    top: 37px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

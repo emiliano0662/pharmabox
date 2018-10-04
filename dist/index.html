@@ -99,7 +99,21 @@
 							<a href="" target="_self">SIGN IN</a>
 						</li>
 						<li>
-							<a href="" target="_self"><img src="./assets/img/icon-user.png" class="img-responsive" width="22px"> MY ACCOUNT</a>
+							<!--<a href="" target="_self"><img src="./assets/img/icon-user.png" class="img-responsive" width="22px"> MY ACCOUNT</a>-->
+							<div class="dropdown">
+
+								<a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./assets/img/icon-user.png" class="img-responsive" width="22px"> MY ACCOUNT</a>
+
+								<ul class="dropdown-menu" aria-labelledby="dLabel">
+									<img class="img-arrow-dropdown-menu" src="./assets/img/arrow-dropdown-menu.png">
+									<li><a href="" target="_self">MY PROFILE</a></li>
+									<li><a href="" target="_self">ADDRESS BOOK</a></li>
+									<li><a href="" target="_self">PAYMENT METHODS</a></li>
+									<li><a href="" target="_self">ORDER HISTORY</a></li>
+									<li><a href="" target="_self">SIGN OUT</a></li>
+								</ul>
+								
+							</div>
 						</li>
 						<li>
 							<a href="" target="_self"><img src="./assets/img/icon-heart.png" class="img-responsive" width="28px"></a>
@@ -878,6 +892,66 @@
 	</div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="modal-added-to-cart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header">
+
+				<h2>ADDED TO CART!</h2>
+
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="./assets/img/icon-close-added-to-cart.png" class="img-responsive"></button>
+
+			</div>
+
+			<div class="modal-body">
+				
+				<div class="row">
+					
+					<div class="col-md-6">
+						
+						<small>1 Item added to cart</small>
+						
+						<div class="container-info">
+
+							<div class="content-text">
+								<img src="./assets/img/products/img-products-1.jpg" class="img-responsive">
+							</div>
+							
+							<div class="content-text">
+								
+								<h5>5-hour energy</h5>
+								
+								<p>Dietary Supplement. Zero sugar. Only 4 calories.....</p>
+								
+								<h4>$3<span>.25</span></h4>
+								
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col-md-6">
+						
+						<h3>Cart Subtotal (3): $34.00</h3>
+
+						<a href="" class="btn btn-danger" target="_self">View Cart</a>
+						<a href="" class="btn btn-default" target="_self">Keep Shopping</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -891,7 +965,7 @@
 <script type="text/javascript">
 $(document).ready(function () {
 
-	$('#modal-pop-up').modal('show');
+	//$('#modal-added-to-cart').modal('show');
 
 });
 </script>
