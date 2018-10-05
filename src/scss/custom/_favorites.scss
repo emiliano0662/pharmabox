@@ -1,0 +1,32 @@
+.block-favorites {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .row {
+        
+        &:nth-of-type(1) {
+
+            h3 {
+                background: transparent;
+
+                span {
+
+                    a {
+                        color: #46c0c1;
+                        background: transparent url('../img/icon-title-home-block-products-blue.png') right center no-repeat;
+
+                        &.active,
+                        &:hover {
+                            color: #46c0c1;
+                            background: transparent url('../img/icon-title-home-block-products-blue.png') right center no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.block-favorites-list {
+    margin-bottom: 100px;
+}
