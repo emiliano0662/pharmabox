@@ -127,6 +127,18 @@
                     font-size: 14px;
                     color: #1b1b1b;
                 }
+
+                .content-row-one {
+                    margin-bottom: 15px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h4 {
+                        margin: 0px;
+                    }
+                }
             }
 
             .link-products {
