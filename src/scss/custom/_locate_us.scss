@@ -65,6 +65,11 @@
                         }
                     }
                 }
+
+                .dropdown-menu {
+                    max-height: 300px;
+                    overflow-y: auto;
+                }
             }
 
             &:nth-of-type(1) {
