@@ -55,31 +55,55 @@
                         color: #0a0709;
                     }
 
-                    .btn-info {
+                    .content-btn {
                         width: 100%;
-                        max-width: 555px;
-                        margin: 0px 0px 10px 0px;
-                        padding: 3px 30px;
-                        text-align: left;
-                        font-size: 27px;
-                        color: #FFF;
-                        border: none;
-                        -webkit-border-radius: 0px;
-                        -moz-border-radius: 0px;
-                        border-radius: 0px;
-                        background: #44bacd url('../img/icon-arrow-text-home-latest-news.png') 97% center no-repeat;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .btn-danger {
+                            width: 46%;
+                            max-width: 555px;
+                            margin: 0px 0px 10px 0px;
+                            padding: 3px 20px;
+                            text-align: left;
+                            font-size: 24px;
+                            color: #FFF;
+                            border: none;
+                            -webkit-border-radius: 0px;
+                            -moz-border-radius: 0px;
+                            border-radius: 0px;
+                            background: #b11e2c url('../img/icon-locate-btn-cart.png') right center no-repeat;
+                        }
+                        
+                        .btn-info {
+                            width: 46%;
+                            max-width: 555px;
+                            margin: 0px 0px 10px 0px;
+                            padding: 3px 20px;
+                            text-align: left;
+                            font-size: 24px;
+                            color: #FFF;
+                            border: none;
+                            -webkit-border-radius: 0px;
+                            -moz-border-radius: 0px;
+                            border-radius: 0px;
+                            background: #0f728c url('../img/icon-cart-btn-cart.png') right center no-repeat;
+                        }
                     }
 
-                    .btn-danger {
+                    .btn-default {
                         margin: 0px;
                         padding-left: 25px;
+                        font-weight: 500;
                         font-size: 27px;
-                        color: #b11e2c;
+                        color: #46c0c1;
                         border: none;
                         -webkit-border-radius: 0px;
                         -moz-border-radius: 0px;
                         border-radius: 0px;
-                        background: transparent url('../img/icon-arrow-red-products-detail.png') left center no-repeat;
+                        background: transparent url('../img/icon-keep-shopping.png') left center no-repeat;
                     }
                 }
 
@@ -222,6 +246,17 @@
 
                     &:nth-of-type(1) {
                         margin-bottom: 20px;
+
+                        .content-btn {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+
+                            .btn-info,
+                            .btn-danger {
+                                width: 100%;
+                            }
+                        }
                     }
                 }
             }
