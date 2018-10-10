@@ -1,0 +1,32 @@
+.cart-confirmation-block {
+    padding: 20px 0px 150px 0px;
+    text-align: center;
+
+    h1 {
+        margin: 0px 0px 10px 0px;
+        font-weight: 700;
+        font-size: 35px;
+        color: #47bdd7;
+    }
+
+    p {
+        margin: 0px 0px 0px 0px;
+        font-weight: 700;
+        font-size: 18px;
+        color: #000;
+    }
+
+    a {
+        margin: 0px 0px 0px 0px;
+        text-decoration: underline;
+        font-size: 18px;
+        color: #000;
+    }
+}
+
+@media (max-width: $screen-sm) {
+    
+    .cart-confirmation-block {
+        padding: 20px 0px 80px 0px;
+    }
+}

@@ -1,0 +1,40 @@
+.cart-payment-block-title {
+
+    h1 {
+        margin: 0px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 36px;
+        color: #b11e2c;
+    }
+
+    small {
+        margin: 0px;
+        font-weight: 700;
+        font-size: 18px;
+        color: #131313;
+    }
+}
+
+.cart-payment-block {
+    padding: 40px 0px 80px 0px;
+
+    input {
+        margin-top: 35px;
+    }
+
+    .img-responsive {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: $screen-sm) {
+
+    .cart-payment-block {
+        padding: 40px 0px 0px 0px;
+
+        input {
+            margin-top: 20px;
+        }
+    }
+}
