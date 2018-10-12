@@ -71,6 +71,10 @@
                     .input-group-addon {
                         border-color: transparent;
                         background: transparent url('../img/asterisk.png') center center no-repeat;
+
+                        &.empty {
+                            background: transparent;
+                        }
                     }
                 }
             }
@@ -112,6 +116,186 @@
             padding: 25px 0px;
         }
     }
+
+    &.seccion-address {
+
+        .content-btn {
+            width: 100%;
+            text-align: right;
+            
+            .btn-default {
+                margin-bottom: 20px;
+                padding: 5px 15px;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 16px;
+                color: #FFF;
+                border-color: #0f728c;
+                background-color: #0f728c;
+                -webkit-border-radius: 0px;
+                -moz-border-radius: 0px;
+                border-radius: 0px;
+            }
+        }
+
+        .content-address {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #a0a0a0;
+
+            h2 {
+                margin: 0px 0px 12px 0px;
+                font-size: 22px;
+                color: #16748e;
+
+                a {
+                    margin: 0px 0px 0px 15px;
+                    font-size: 20px;
+                    color: #46c0c1;
+                }
+            }
+
+            p {
+                margin: 0px;
+                font-size: 18px;
+                color: #b4b1b1;
+
+                &:last-child {
+                    margin: 0px;
+                }
+            }
+        }
+    }
+
+    &.seccion-orden-history {
+
+        .table {
+
+            thead {
+                
+                th {
+                    padding: 10px 0px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #0f728c;
+                }
+            }
+
+            tbody {
+                
+                td {
+                    padding-top: 15px;
+
+                    &:last-child {
+                        padding-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.seccion-orden-history-detail {
+
+        .content-btn {
+            width: 100%;
+            text-align: right;
+            
+            .btn-default {
+                margin-bottom: 0px;
+                padding: 5px 15px;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 16px;
+                color: #FFF;
+                border-color: #0f728c;
+                background-color: #0f728c;
+                -webkit-border-radius: 0px;
+                -moz-border-radius: 0px;
+                border-radius: 0px;
+            }
+        }
+
+        .cart-review-block-address {
+            margin-bottom: 20px;
+    
+            .content-info {
+                padding: 15px;
+
+                h2 {
+                    margin: 0px 0px 5px 0px;
+                    font-size: 18px;
+                }
+
+                p {
+                    margin: 0px 0px 5px 0px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .cart-review-block-summary {
+
+            .table {
+
+                tbody {
+            
+                    td {
+                        
+                        .img-responsive {
+                            max-width: 80px;
+                            border: none;
+                        }
+
+                        h3 {
+                            font-size: 15px;
+                        }
+                        
+                        h4 {
+                            font-size: 20px;
+                        }
+
+                        h5 {
+                            margin: 22px 0px 0px 0px;
+                            font-weight: 500;
+                            font-size: 20px;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+
+            .col-md-4 {
+
+                .content-info {
+                    padding: 20px 18px;
+
+                    table {
+
+                        thead {
+
+                            tr {
+
+                                th {
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+
+                        tbody {
+
+                            tr {
+                                
+                                td {
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $screen-md) {
@@ -132,6 +316,25 @@
 
             .form-group-divide {
                 padding: 0px;
+            }
+        }
+
+        &.seccion-orden-history-detail {
+
+            .cart-review-block-summary {
+
+                .table {
+
+                    tbody {
+                
+                        td {
+                            
+                            .img-responsive {
+                                margin: 0px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
