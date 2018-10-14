@@ -44,6 +44,11 @@ section {
 }
 
 #modal-pop-up {
+	z-index: 99999;
+
+	.modal-dialog {
+		margin: 50px auto 30px auto;
+	}
 
 	.modal-content {
 		border: none;
@@ -164,6 +169,11 @@ section {
 }
 
 #modal-added-to-cart {
+	z-index: 99999;
+
+	.modal-dialog {
+		margin: 100px auto 30px auto;
+	}
 
 	.modal-content {
 		border: none;
