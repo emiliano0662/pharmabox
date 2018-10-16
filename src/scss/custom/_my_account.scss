@@ -296,6 +296,187 @@
             }
         }
     }
+
+    &.seccion-rewards {
+        
+        .img-responsive {
+            border: none;
+        }
+
+        hr {
+            border: 1px solid #8f8f8f;
+        }
+
+        .rewards-list-main {
+            padding: 15px 25px 20px 25px;
+            background: transparent url('../img/bg-pharmabox-rewards.png') center center / cover no-repeat;
+
+            .row {
+
+                .col-md-6 {
+                    min-height: 343px;
+
+                    &:nth-of-type(1) {
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        h2 {
+                            margin: 0px 0px 15px 0px;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            font-size: 40px;
+                            color: #46c0c1;
+                        }
+
+                        h3 {
+                            width: 100%;
+                            max-width: 300px;
+                            margin: 0px 0px 15px 0px;
+                            padding: 7px 10px;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            font-size: 40px;
+                            color: #FFF;
+                            background-color: #0f728c;
+                        }
+
+                        p {
+                            margin: 0px 0px 20px 0px;
+                            line-height: 22px;
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: #393b3d;
+                        }
+
+                        .content-barcode {
+                            width: 100%;
+                            max-width: 150px;
+                            padding: 70px 0px 0px 0px;
+                            text-align: center;
+                            border: 2px solid #bebebe;
+                            background: #fff url('../img/bg-barcode.png') top center / 150px auto no-repeat;
+                            
+                            small {
+                                margin: 0px;
+                                font-family: 'Arial';
+                                font-weight: 800;
+                                font-size: 20px;
+                                color: #000;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        p {
+                            margin: 15px 0px 0px 0px;
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: #393b3d;
+                        }
+                    }
+                }
+            }
+        }
+
+        .rewards-list {
+
+            .row {
+
+                .col-md-8 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
+                    h2 {
+                        margin: 0px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 36px;
+                        color: #b4b1b1;
+                    }
+
+                    h3 {
+                        margin: 0px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 22px;
+                        color: #0f728c;
+                    }
+                    
+                    p {
+                        margin: 15px 0px 0px 0px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: #b4b1b1;
+                    }
+
+                    .content-items {
+                        width: 100%;
+                        margin-top: 20px;
+
+                        .item {
+                            float: left;
+                            box-sizing: border-box;
+            
+                            .content-barcode {
+                                width: 100%;
+                                padding: 70px 0px 0px 0px;
+                                text-align: center;
+                                border: 2px solid #bebebe;
+                                background: #fff url('../img/bg-barcode.png') top center / 150px auto no-repeat;
+
+                                small {
+                                    margin: 0px;
+                                    font-family: 'Arial';
+                                    font-weight: 800;
+                                    font-size: 20px;
+                                    color: #000;
+                                }
+                            }
+                            
+                            h4 {
+                                width: 100%;
+                                margin: 15px 0px 7px 0px;
+                                padding: 7px 10px;
+                                text-align: center;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                font-size: 30px;
+                                color: #FFF;
+                                background-color: #b11e2c;
+                            }
+                
+                            label {
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                font-size: 16px;
+                                color: #393b3d;
+                            }
+
+                            &:nth-of-type(1) {
+                                width: 30%;
+                                padding-right: 15px;
+                            }
+
+                            &:nth-of-type(2) {
+                                width: 70%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $screen-md) {
@@ -331,6 +512,99 @@
                             
                             .img-responsive {
                                 margin: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.seccion-rewards {
+
+            .rewards-list-main {
+
+                .row {
+
+                    .col-md-6 {
+
+                        &:nth-of-type(2) {
+
+                            .img-responsive {
+                                margin: 30px auto 0px auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .rewards-list {
+
+                .row {
+
+                    .col-md-4 {
+
+                        .img-responsive {
+                            margin: 0px auto 20px auto;
+                        }
+                    }
+
+                    .col-md-8 {
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-sm) {
+
+    .my-account-block {
+
+        &.seccion-rewards {
+
+            .rewards-list {
+
+                .row {
+
+                    .col-md-8 {
+
+                        h2 {
+                            text-align: center;
+                        }
+
+                        h3 {
+                            text-align: center;
+                        }
+                        
+                        p {
+                            text-align: center;
+                        }
+
+                        .content-items {
+
+                            .item {
+                
+                                .content-barcode {
+                                    width: 100%;
+                                    max-width: 150px;
+                                    margin: 0px auto;
+                                }
+
+                                h4 {
+                                    font-size: 25px;
+                                }
+                    
+                                &:nth-of-type(1) {
+                                    width: 100%;
+                                    padding-right: 0px;
+                                }
+
+                                &:nth-of-type(2) {
+                                    width: 100%;
+                                    margin-top: 15px;
+                                }
                             }
                         }
                     }
