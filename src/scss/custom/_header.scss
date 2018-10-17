@@ -385,12 +385,12 @@ header {
                         }
                         
                         li {
-                            padding: 0px 6px;
+                            padding: 0px 5px;
                             
                             a {
-                                padding: 8px 3px;
+                                padding: 8px 0px;
                                 font-weight: 800;
-                                font-size: 14px;
+                                font-size: 12px;
                                 color: #4b4b4b;
                                 border-bottom: 4px solid #FFF;
 
@@ -434,7 +434,7 @@ header {
                                 
                                 a {
                                     padding: 8px 0px;
-                                    font-size: 13px;
+                                    font-size: 11px;
                                 }
                             }
                         }
@@ -513,10 +513,9 @@ header {
                         .navbar-nav {
                             
                             li {
-                                padding: 0px 5px;
                                 
                                 a {
-                                    padding: 8px 2px;
+                                    padding: 8px 1px;
                                 }
                             }
                         }
